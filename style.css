@@ -21,7 +21,7 @@ nav ul li a {
   text-decoration: none;
 
 }
-section {
+.container {
   width: 50%;
   margin: 0 auto;
   background-color: whitesmoke;
@@ -44,4 +44,16 @@ img {
 }
 article h2 {
   margin-top: 0;
+}
+section {
+    float: left;
+}
+#sectionleft {
+    width: 70%;
+}
+#sectionright {
+    width: 30%;
+}
+img {
+    max-width: 50%;
 }
