@@ -1,7 +1,14 @@
 body {
   margin: 0;
   background-color: #e0e0e0;    
-    font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.container > footer {
+    background-color: dimgrey;
+    color: darkgrey;
+    padding: 1rem;
 }
 nav {
   background-color: #ff9000;
@@ -19,15 +26,30 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+}
 
+#sectionleft nav {
+    background-color: transparent;
+}
+#sectionleft nav ul li {
+  padding: .5rem 1rem;
+}
+#sectionleft nav ul li a {
+    color: dimgrey;
+}
+#sectionright nav {
+    background-color: darkgray;
+}
+#sectionright nav ul li {
+    display: block;
 }
 .container {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   background-color: whitesmoke;
 }
 article {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 .indent {
   text-indent: 2rem;
@@ -47,13 +69,17 @@ article h2 {
 }
 section {
     float: left;
+    padding: 1rem;
 }
 #sectionleft {
-    width: 70%;
+    width: calc(70% - 2rem);
 }
 #sectionright {
-    width: 30%;
+    width: calc(30% - 2rem);
 }
 img {
     max-width: 50%;
+}
+footer {
+    clear: both;
 }
