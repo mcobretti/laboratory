@@ -13,49 +13,14 @@ img {
 	width: 90%;
 	margin: 0 auto;
 	padding-top: 100px;
-	display: flex;
-	flex-flow: row wrap;
+}
+.content {
+	position: relative;
 }
 h1 {
-	margin: 50px 0;
+	margin-top: 50px;
 	font-size: 2.6rem;
 }
-
-/*FLESBOX NAV*/
-
-nav ul {
-		display: flex;
-		flex-flow: row wrap;
-		background-color: #e0e0e0;
-		padding: 30px;
-	}
-	nav ul li {
-		flex: 1 1 auto;
-		font-size: 1.1rem;
-		color: #000;
-		padding: 10px;
-	}
-
-	@media all and (max-width: 1200px) {
-		nav ul li {
-			flex: 1 1 calc(20% - 20px);
-		}
-		.hidden {
-			display: none;
-		}
-	}
-	@media all and (max-width: 768px) {
-		nav ul li {
-			flex: 1 1 calc(50% - 20px);
-		}
-	}
-	@media all and (max-width: 480px) {
-		nav ul li {
-			flex: 1 1 calc(100% - 20px);
-		}
-	}
-
-
 h2 {
 	font-size: 2rem;
 }
@@ -64,9 +29,11 @@ p, figcaption {
 	line-height: 1.8rem;
 }
 header, footer {
-	flex: 0 0 100%;
 	margin-bottom: 50px;
 	text-align: center;
+}
+footer {
+	clear: both;
 }
 header img {
 	border-radius: 20px;
@@ -74,13 +41,14 @@ header img {
 	box-shadow: 5px 5px 5px #ccc;
 }
 #left {
-	display: flex;
-	flex-flow: column nowrap;
+	position: absolute;
+	left: 0;
 	max-width: 500px;
-	flex: 1 1;
 }
 #right {
-	flex: 1 1;
+	position: absolute;
+	right: 0;
+	width: calc(100% - 500px);
 }
 article p {
 	width: 100%;
@@ -94,6 +62,8 @@ article aside {
 	float: right;
 }
 footer {
+	position: absolute;
+	bottom: 0;
 	padding-top: 50px;
 }
 @media all and (min-width: 1024px) and (max-width: 1365px) {
@@ -112,8 +82,9 @@ footer {
 	article p {
 		column-count: 1;
 	}
-	#right {
-		flex: 0 auto;
+	#left, #right {
+		width: 100%;
+		position: initial;
 	}
 	header {
 		order: -2;
