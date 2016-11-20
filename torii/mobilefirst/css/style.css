@@ -363,6 +363,10 @@ footer p {
 
 /*6. MEDIAQUERIES */
 @media all and (min-width: 768px) {
+  p, a {
+    font-size: 1.5rem;
+    }
+  }
   header .container {
     width: 80%;
   }
@@ -404,7 +408,6 @@ footer p {
     -ms-flex: 1 1 auto;
         flex: 1 1 auto;
   }
-}
 @media all and (min-width: 1024px) {
   #about .container, #offer .offerboxes, .movie {
     display: -ms-flexbox;
@@ -510,4 +513,5 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 768px) 
   background-size: 300px 300px;
 }
 
+}
 }
