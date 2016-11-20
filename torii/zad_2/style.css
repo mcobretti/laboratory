@@ -1,0 +1,112 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+html {
+	font-size: 62.5%;
+	font-family: 'Lato', sans-serif;
+}
+img {
+	max-width: 100%;
+}
+h1 {
+	margin: 50px 0;
+	font-size: 3.8rem;
+}
+h2 {
+	font-size: 2.6rem;
+	margin: 25px 0;
+}
+h1, h2, aside p {
+	font-family: 'Lato', sans-serif;
+}
+p, figcaption {
+	font-family: 'Play', sans-serif;
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 100px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+}
+header, footer {
+	-ms-flex: 0 100%;
+	    flex: 0 100%;
+	text-align: center;
+}
+
+/*HEADER*/
+header img {
+	border-radius: 20px;
+	transform: rotateZ(5deg);
+	box-shadow: 5px 5px 5px #ccc;
+}
+
+/*SECTION LEFT*/
+#left {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: column nowrap;
+	    flex-flow: column nowrap;
+	-ms-flex-preferred-size: 300px;
+	    flex-basis: 300px;
+}
+figure {
+	margin-bottom: 25px;
+}
+
+/*SECTION RIGHT*/
+#right {
+	-ms-flex-preferred-size: calc(100% - 300px);
+	    flex-basis: calc(100% - 300px);
+}
+article {
+	-moz-column-width: 330px;
+	     column-width: 330px;
+}
+article img {
+	float: left;
+	max-width: 200px;
+}
+article h2 {
+	-moz-column-span: all;
+	     column-span: all;
+}
+aside {
+	float: right;
+}
+aside p {
+	font-size: 2.6rem;
+	line-height: 3.2rem;
+	color: red;
+	text-align: center;
+	padding: 5%;
+}
+
+@media all and (max-width: 800px) {
+	#left, #right {
+		-ms-flex-preferred-size: 100%;
+		    flex-basis: 100%
+	}
+	#right {
+		-ms-flex-order: 1;
+		    order: 1;
+	}
+	#left {
+		-ms-flex-order: 2;
+		    order: 2;
+	}
+	article {
+		-moz-column-width: initial;
+		     column-width: initial;
+	}
+	footer {
+		-ms-flex-order: 3;
+		    order: 3;
+	}
+}

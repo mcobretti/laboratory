@@ -1,39 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="sample website">
-  <meta name="viewport" content="width=device-width. initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <title>mcobretti</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Zadania do zajęć Torii Academy">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TORII</title>
+
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext" rel="stylesheet">
+
+	<style>
+		
+		html {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 62.5%;
+		}
+		hgroup {
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-flow: row wrap;
+			    flex-flow: row wrap;
+			-ms-flex-line-pack: center;
+			    align-content: center;
+			position: fixed;
+			height: 100vh;
+			width: 50%;
+			text-align: center;
+		}
+		h1, h2 {
+			-ms-flex-preferred-size: 100%;
+			    flex-basis: 100%;
+		}
+		h1 {			
+			font-size: 2.2rem;
+			color: #2c2c2c;			
+		}
+		h2 {
+			font-size: 1.4rem;
+			margin-bottom: 1rem;
+		}
+		nav {
+			width: 50%;
+			float: right;
+		}	
+		nav ul {
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-flow: column nowrap;
+			    flex-flow: column nowrap;
+			border-left: 1px solid #ededed;
+		}
+		a {
+			font-size: 1.4rem;
+			color: #2c2c2c;
+			text-transform: uppercase;
+			text-decoration: none;
+			display: block;
+			padding: 4vh;
+		}
+		a:hover {
+			color: #fff;
+	   		background-color: #ff4234;
+    	}
+
+	</style>
 </head>
 <body>
-  <section>
-    <nav>
-      <ul>
-        <li><a href="http://allegro.pl/">allegro</a></li>
-        <li><a href="https://www.facebook.com/">facebook</a></li>
-        <li><a href="https://github.com/">github</a></li>
-        <li><a href="http://eduweb.pl/">eduweb</a></li>
-        <li><a href="https://validator.w3.org/">w3c</a></li>
-      </ul>
-    </nav>
-  </section>
-  <section>
-    <article>
-      <h2>ARTYKUŁ I</h2>
-      <p class="indent">Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba było widzieć wyżółkłych młokosów gadających przez płotki, przez kwiaty na polowanie i ukazach licznyc sprawa wróciła znowu jak dziecko</p>
-      <p><img src="code.jpg" alt="code"/>Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba było widzieć wyżółkłych młokosów gadających przez płotki, przez kwiaty na polowanie i ukazach licznyc sprawa wróciła znowu jak dziecko. Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba było widzieć wyżółkłych młokosów gadających przez płotki, przez kwiaty na polowanie i ukazach licznyc sprawa wróciła znowu jak dziecko. Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba było widzieć wyżółkłych młokosów gadających przez płotki, przez kwiaty na polowanie i ukazach licznyc sprawa wróciła znowu jak dziecko</p>
+	
+	<section>
+			<hgroup>
+				<h1>HTML & CSS</h1>
+				<h2>ARKADIUSZ WĘGRZYN</H2>
+			</hgroup>
+			<nav>
+				<ul>
+					<li><a href="#">wprowadzenie</a></li>
+					<li><a href="#">zadanie #1</a></li>
+					<li><a href="#">zadanie #2 - FLEXBOX</a></li>
+					<li><a href="#">zadanie #3a - FLOAT</a></li>
+					<li><a href="#">zadanie #3b - POSITION: ABSOLUTE</a></li>
+					<li><a href="#">zadanie #4 - SIMPLE FLEXBOX MENU</a></li>
+					<li><a href="#">zadanie #5a - TABLE I</a></li>
+					<li><a href="#">zadanie #5b - TABLE II</a></li>
+					<li><a href="#">zadanie #5c - TABLE III</a></li>
+					<li><a href="#">zadanie #6 - DISPLAY: GRID</a></li>
+					<li><a href="#">zadanie #7 - FORM W/DISPLAY: GRID</a></li>
+					<li><a href="#">zadanie ostatnie - MOBILE FIRST</a></li>
+				</ul>
+			</nav>
+	</section>
 
-    </article>
-    <div class="clear"></div>
-    <article>
-      <h2>ARTYKUŁ II</h2>
-      <p class="indent">Drogi Marszałku, Wysoka Izbo. PKB rośnie. Nie zapominajmy jednak, że zakres i rozwijanie struktur pomaga w tym zakresie jest ważne zadanie w restrukturyzacji przedsiębiorstwa. Nie mówili prawdy.</p>
-      <p><img src="gtr.jpg" alt="gtr"/>Drogi Marszałku, Wysoka Izbo. PKB rośnie. Nie zapominajmy jednak, że zakres i rozwijanie struktur pomaga w tym zakresie jest ważne zadanie w restrukturyzacji przedsiębiorstwa. Nie mówili prawdy. Drogi Marszałku, Wysoka Izbo. PKB rośnie. Nie zapominajmy jednak, że zakres i rozwijanie struktur pomaga w tym zakresie jest ważne zadanie w restrukturyzacji przedsiębiorstwa. Nie mówili prawdy. Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba było widzieć wyżółkłych młokosów gadających przez płotki, przez kwiaty na polowanie i ukazach licznyc sprawa wróciła znowu jak dziecko</p>
-    </article>
-    <div class="clear"></div>
-  </section>
 </body>
 </html>

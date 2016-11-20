@@ -1,0 +1,63 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html {
+	font-size: 62.5%;
+	font-family: 'Lato', sans-serif;
+}
+section {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
+	height: 100vh;
+}
+
+/*TABLE*/
+table {
+	width: 80%;
+	max-width: 380px;
+	font-size: 2.2rem;
+	border: 8px solid #fff;
+	outline: 2px solid #000;
+}
+th, td {
+	text-align: left;
+	vertical-align: middle;
+    padding: 7px 0;
+	border-bottom: 2px solid #000;
+}
+th span {
+	font-size: 4.2rem;
+	letter-spacing: 2px;
+}
+table tr:first-child, table tr:nth-child(11) {
+	border-bottom: 5px solid #000;
+}
+table tr:first-child, table tr:nth-child(2), .bold {
+	font-weight: 800;
+}
+table tr:nth-child(2) {
+	font-size: 1.6rem;
+}
+table tr td:nth-child(2) {
+	text-align: right;
+}
+tr:nth-child(5) td:first-child, tr:nth-child(9) td:first-child, tr:nth-child(10) td:first-child {
+	padding-left: 20px;
+}
+tr:nth-child(12) td, tr:last-child td {
+	width: 50%;
+	position: relative;
+}
+.dot {
+	position: absolute;
+	top: calc(50% - 3px);
+	right: -3px;
+	height: 6px;
+	width: 6px;
+	border-radius: 10px;
+	background-color: #000;
+}

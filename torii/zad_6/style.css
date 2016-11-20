@@ -1,0 +1,106 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+html {
+	font-size: 62.5%;
+}
+img {
+	max-width: 100%;
+}
+h1 {
+	margin: 50px 0;
+	font-size: 3.8rem;
+}
+h2 {
+	font-size: 2.6rem;
+	margin: 25px 0;
+}
+h1, h2, aside p {
+	font-family: 'Lato', sans-serif;
+}
+p, figcaption {
+	font-family: 'Play', sans-serif;
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+header, footer {
+	text-align: center;
+}
+header img {
+	border-radius: 20px;
+	transform: rotateZ(5deg);
+	box-shadow: 5px 5px 5px #ccc;
+}
+figure {
+	margin-bottom: 25px;
+}
+article {
+	-moz-column-width: 330px;
+	     column-width: 330px;
+}
+article img {
+	float: left;
+	max-width: 200px;
+}
+article h2 {
+	-moz-column-span: all;
+	     column-span: all;
+}
+aside {
+	float: right;
+}
+aside p {
+	font-size: 2.6rem;
+	line-height: 3.2rem;
+	color: red;
+	text-align: center;
+	padding: 5%;
+}
+
+/*GRID*/
+.container {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 100px;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 300px auto;
+	    grid-template-columns: 300px auto;
+	grid-template-areas: 	"header header"
+							"left right"
+							"footer footer";
+}
+header {
+	grid-area: header;
+}
+#left {
+	grid-area: left;
+}
+#right {
+	grid-area: right;
+}
+footer {
+	grid-area: footer;
+}
+
+@media all and (max-width: 800px) {
+	.container {
+		-ms-grid-columns: 100%;
+		    grid-template-columns: 100%;
+		grid-template-areas: 	"header"
+								"right"
+								"left"
+								"footer";
+}
+	#left {
+		grid-area: left;
+	}
+	#right {
+		grid-area: right;
+	}
+	article {
+		-moz-column-width: initial;
+		     column-width: initial;
+	}
+}

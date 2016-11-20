@@ -1,0 +1,45 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html {
+	font-size: 62.5%;
+	font-family: 'Lato', sans-serif;
+}
+
+section {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
+	height: 100vh;
+}
+
+/*TABLE*/
+table {
+	width: 50%;
+	max-width: 700px;
+	font-size: 2rem;
+	border-radius: 15px;
+	overflow: hidden;
+}
+table tr {
+	background-color: #E8EDFF;
+	color: #707FBC;
+	border-bottom: 1px solid #fff;
+}
+table tr:first-child {
+	background-color: #B9C9FE;
+	font-weight: 600;
+	color: #003399;
+}
+table tr:last-child {
+	font-style: italic;
+	font-size: 1.8rem;
+	letter-spacing: -1px;
+}
+th, td {
+	text-align: left;
+    padding: 15px 10px;
+}

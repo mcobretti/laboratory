@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Zadanie #7 - Formularz w grid">
+	<meta name="viewport" width="device-width, initial-scale=1">
+	<title>Zadanie #7</title>
+	
+	<style>
+			.container {
+				width: 50%;
+				margin: 0 auto;
+				display: grid;
+				grid-gap: 10px;
+				grid-template-columns 1fr 1fr;
+				grid-template-areas: "left right";
+			}
+			label, p {
+				grid-column: left;
+			}
+			input {
+				grid-column: right;
+			}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+
+			<label for="textinput">Pole tekstowe</label><input type="text" id="textinput" />
+			<label for="passinput">Pole hasła</label><input type="password" id="passinput" />
+			<label for="emailinput">Pole z adresem e-mail</label><input type="email" name="email" id="emailinput" />
+			<label for="searchinput">Pole wyszukiwania</label><input type="search" name="googlesearch" id="searchinput" />
+			<label for="telinput">Pole z numerem telefonu</label><input type="tel" name="usrtel" id="telinput" />
+			<label for="urlinput">Pole z adresem url</label><input type="url" name="homepage" id="urlinput" />
+			<label for="numberinput">Pole liczbowe</label><input type="number" name="quantity" min="1" max="5" id="numberinput" />
+			<label for="dateinput">Pole z datą</label><input type="date" name="bday" id="dateinput" />
+			<label for="monthinput">Pole z wyborem miesiąca</label><input type="month" name="bdaymonth" id="monthinput" />
+			<label for="weekinput">Pole z wyborem tygodnia</label><input type="week" name="week_year" id="weekinput" />
+			<label for="timeinput">Pole z wyborem czasu</label><input type="time" name="usr_time" id="timeinput" />
+			<label for="dateinput">Pole z wyborem daty</label><input type="datetime-local" name="bdaytime" id="datetime" />
+			<label for="rangeinput">Pole z suwakiem</label><input type="range" name="points" min="0" max="10" id="rangeinput" />
+			<p>Przycisk submit</p><input type="submit" value="Submit" />
+			<p>Przycisk reset</p><input type="reset" />
+			<p>Button</p><input type="button" onclick="alert('Hello World!')" value="Click Me!">
+			<p>Przycisk radio</p><input type="radio" name="gender" value="wybor1" checked />
+			<p>Przycisk checkbox</p><input type="checkbox" name="vehicle1" value="Bike" />	
+			<label for="colorinput">Pole z wyborem koloru</label><input type="color" name="favcolor" id="colorinput" />
+	
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+@import url('reset.css');
+
+html {
+	font-family: 'Lato', sans-serif;
+	font-size: 62.5%;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+}
+
+h2 {
+	font-size: 2.6rem;
+	margin-bottom: 20px;
+}
+h3 {
+	font-size: 1.8rem;
+	margin-bottom: 20px;
+}
+p {
+	font-size: 1.3rem;
+	line-height: 2rem;
+}
+
+header, footer {
+	-ms-flex-preferred-size: 100%;
+	    flex-basis: 100%;
+}
+header nav, .container > footer {
+	padding: 50px 0;
+    margin: 50px 0;
+    border: 1px solid #e0e0e0;
+}
+
+/*NAVS*/
+header nav ul {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row nowrap;
+	    flex-flow: row nowrap;
+	-ms-flex-pack: center;
+	    justify-content: center;
+}
+header nav ul li {
+	-ms-flex: 1 1 auto;
+	    flex: 1 1 auto;
+	text-align: center;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-size: 1.4rem;
+	color: #000;
+}
+#right ul li {
+	line-height: 2.8rem;
+}
+
+/*SECTIONS*/
+
+#left {
+	-ms-flex: 3 3;
+	    flex: 3 3;
+	border-right: 0;
+	padding: 5%;
+}
+#right {
+	-ms-flex: 1 1;
+	    flex: 1 1;
+	padding: 5%;
+}
+
+/*ARTICLE*/
+article {
+	margin-bottom: 20px;
+}
+article p {
+	margin-bottom: 10px;
+}
+article p:nth-child(3) {
+	width: calc(100% - 250px);
+}
+aside {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+	float: right;
+	max-width: 250px;
+	box-sizing: border-box;
+	padding: 0 5%;
+}
+aside p {
+	font-size: 1.8rem;
+	line-height: 2.6rem;
+	color: red;
+}
+article footer {
+	text-align: right;
+}
+
+/*FOOTER*/
+.container > footer {
+	text-align: center;
+}
