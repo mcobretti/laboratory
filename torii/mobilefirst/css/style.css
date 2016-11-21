@@ -366,7 +366,6 @@ footer p {
   p, a {
     font-size: 1.5rem;
     }
-  }
   header .container {
     width: 80%;
   }
@@ -408,6 +407,7 @@ footer p {
     -ms-flex: 1 1 auto;
         flex: 1 1 auto;
   }
+}
 @media all and (min-width: 1024px) {
   #about .container, #offer .offerboxes, .movie {
     display: -ms-flexbox;
