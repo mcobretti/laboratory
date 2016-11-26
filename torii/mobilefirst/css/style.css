@@ -79,7 +79,7 @@ iframe {
 /* 1. HEADER*/
 #top {
   height: 100vh;
-  background: url('img/mainbgd.jpg') fixed no-repeat left center;
+  background: url('../img/mainbgd.jpg') fixed no-repeat left center;
   background-size: cover;
 }
 header {
@@ -96,7 +96,7 @@ header .container {
   text-indent: -9999px;
   height: 80px;
   margin: 20px 0;
-  background: url('img/logo.svg') no-repeat center;
+  background: url('../img/logo.svg') no-repeat center;
   background-size: contain;
   transition-duration: .3s;
 }
@@ -205,8 +205,11 @@ header nav ul li a:hover {
   background-color: #df372c;
   text-align: center;
 }
-#about img {
+#about .image {
+  background: url(../img/enkei@1x.jpg) no-repeat center center;
+
   margin: 0 0 50px;
+  height: 300px;
 }
 #offer {
   background-color: #e2e2e2;
@@ -360,6 +363,9 @@ footer p {
 
 /*6. MEDIAQUERIES */
 @media all and (min-width: 768px) {
+  p, a {
+    font-size: 1.5rem;
+    }
   header .container {
     width: 80%;
   }
@@ -386,6 +392,10 @@ footer p {
   }
   iframe {
     height: 350px;
+  }
+  .pictures img {
+    max-width: 50%;
+    float: left;
   }
   .contactboxes {
     display: -ms-flexbox;
@@ -416,7 +426,7 @@ footer p {
             order: 2;
         text-align: left;
   }
-  #about img {
+  #about .image {
     width: 50%;
     -ms-flex-order: 1;
         order: 1;
@@ -456,10 +466,6 @@ footer p {
         order: 2;
         text-align: left;
   }
-  .pictures img {
-    max-width: 50%;
-    float: left;
-  }
   form {
     display: -ms-flexbox;
     display: flex;
@@ -487,4 +493,25 @@ footer p {
   .pictures img {
     max-width: 33.333333%;
     }
+}
+
+/*RETINA*/
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 768px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 768px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 768px),
+only screen and (     -webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+only screen and (                -webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+only screen and (                min-resolution: 192dpi) and (min-width: 768px),
+only screen and (    -webkit-min-device-pixel-ratio: 2)  and (min-width: 768px),
+only screen and (                -webkit-min-device-pixel-ratio: 2)  and (min-width: 768px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 768px) { 
+
+  #about .image {
+  background: url(../img/enkei@2x.jpg) no-repeat center center;
+  background-size: 300px 300px;
+}
+
+}
 }
