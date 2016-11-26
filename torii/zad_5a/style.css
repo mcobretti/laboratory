@@ -8,11 +8,14 @@ html {
 
 section {
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-ms-flex-pack: center;
-	    justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
 	-ms-flex-align: center;
-	    align-items: center;
+	-webkit-align-items: center;
+	align-items: center;
 	height: 100vh;
 }
 
@@ -21,6 +24,8 @@ table {
 	width: 50%;
 	max-width: 700px;
 	font-size: 2rem;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
 	border-radius: 15px;
 	overflow: hidden;
 }
